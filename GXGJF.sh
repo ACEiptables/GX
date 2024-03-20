@@ -5,7 +5,7 @@ FILE=/data/GJF/9999
 if [ ! -f "$FILE" ]; then
 echo "Hello, World!" > /data/GJF/9999
     echo "\033[34m\n自动更新中\033[0m"
-    curl -o /data/GJF/1.0 "https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaojizhu/GX/main/国际版本"
+    curl -o /data/GJF/1.0 "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACEiptables/GX/main/国际版本"
 sleep 2
     echo "⚠️⚠️⚠️⚠️⚠️⚠️"
     echo "\033[35m设备厂商:\033[0m"
