@@ -1,5 +1,5 @@
 echo "\033[32m\n检查更新中\033[0m"
-mkdir /data/小叽猪/
+
 sleep 0.5
 FILE=/data/小叽猪/999
 if [ ! -f "$FILE" ]; then
