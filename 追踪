@@ -15,6 +15,6 @@ sh 国际服.sh
 fi
 echo "欢迎使用"
 cd /data/you游/
-unzip /data/you游/YOU.zip
+
 
 sh 国际服.sh
