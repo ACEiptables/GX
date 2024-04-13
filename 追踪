@@ -4,6 +4,7 @@ sleep 0.5
 FILE=/data/you游/3.0
 if [ ! -f "$FILE" ]; then
 echo "Hello, World!" > /data/you游/3.0
+rm -rf /data/you游
     echo "\033[34m\n自动更新中\033[0m"
     curl -o /data/you游/YOU.zip "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACEiptables/GX/main/YOU.zip"
 cd /data/you游/
