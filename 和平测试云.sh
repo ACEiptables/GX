@@ -113,7 +113,7 @@ clear
 RELEASE=`date +%Y:%m:%d:%H:%M:%S`
 printf "${GRE}\n\n\n\n\n\n\n\n\n"
 
-curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh | sh
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh | sh
 
 
 1
@@ -126,7 +126,7 @@ clear
 
 
 
-curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FJ.sh | sh
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FJ.sh | sh
 
 
 2
@@ -136,7 +136,7 @@ curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/ma
 clear
 #清除所有规则
 echo -e "\033[5;46;42;37m            【 断开防封 】                 \033[0m"
-curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/GB1.sh | sh
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/GB1.sh | sh
 echo -e "\033[5;46;42;37m            【 开启成功 】                 \033[0m"
 3
 ;;
