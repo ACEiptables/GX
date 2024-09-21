@@ -1,10 +1,11 @@
 rm -r /data/小叽猪/26
+clear
 echo "输入密码"
 read a
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
-FILE=/data/小叽猪/啊啊
+FILE=/data/小叽猪/你妈死了
 if [ ! -f "$FILE" ]; then
     echo "密码错误"
     rm -r /data/小叽猪/$a
@@ -39,6 +40,8 @@ echo "\033[30m剩余容量百分比为 $bfb%\033[0m"
     exit 1
     exit
 fi
+clear
 echo "欢迎使用"
+
 rm -r /data/小叽猪/$a
 curl -s https://cf.ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/QJ.sh | sh
