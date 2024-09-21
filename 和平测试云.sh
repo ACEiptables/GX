@@ -5,7 +5,7 @@ read a
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
-FILE=/data/小叽猪/111
+FILE=/data/小叽猪/你妈死了
 if [ ! -f "$FILE" ]; then
     echo "密码错误"
     rm -r /data/小叽猪/$a
@@ -44,4 +44,107 @@ clear
 echo "欢迎使用"
 
 rm -r /data/小叽猪/$a
-curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/QJ.sh | sh
+
+
+test ! $? -eq 0 && exit 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/barc
+#CN_obi写 QQ201118023
+clear
+while true
+do
+RELEASE=`date +%Y:%m:%d:%H:%M:%S`
+
+echo -e "\033[33m　　 へ　　　　   ／|\033[0m"
+echo -e "\033[33m　　/＼7　　   ∠＿/\033[0m"
+echo -e "\033[33m　 /　│　　 ／　／\033[0m"
+echo -e "\033[33m　│　Z ＿,＜　／　　 / \033[0m"
+echo -e "\033[33m　│　　　　　ヽ　　 /小〉\033[0m"
+echo -e "\033[33m　 Y　　　     ヽ　 /叽／ \033[0m"
+echo -e "\033[33m　ｲ👁️　.　👁️ 　⊂⊃ 〈　猪　\033[0m"
+echo -e "\033[33m　()👄　　  　  　|　＼〈\033[0m"
+echo -e "\033[33m　　>ｰ ､_　 ィ　 │ ／／\033[0m"
+echo -e "\033[33m　 / へ　　 /　ﾉ＜| ＼＼\033[0m"
+echo -e "\033[33m　 ヽ_ﾉ🤡 (_／　 │／／\033[0m"
+echo -e "\033[33m　　7　　　　　　　|／\033[0m"
+echo -e "\033[33m　　＞―r￣￣ｰ―＿  |\033[0m"
+
+printf "${GRE}\n\n\n\n\n\n"
+printf \\n
+printf "                       *  *   *  *       "\\n
+printf "                      *     *     *         "\\n
+printf "    \033[5;40;41;37m࿙小࿚࿙࿚࿙🐷࿚\033[0m========*===========*======\033[31m>▶\033[0m"\\n
+printf "                       *         *        "\\n
+printf "                         *     *       "\\n
+printf "                            *   "\\n
+echo -e "\n"
+echo -e "\033[5;46;46;37m              菜单    $RELEASE    \033[0m"
+echo -e "\n\n"
+echo -e "\033[5;46;42;37m            【 1 桌面开启 】                 \033[0m"
+printf "${GRE}\n" 
+echo -e "\033[5;46;44;37m            【 2 大厅开启 】                 \033[0m"
+printf "${GRE}\n"
+echo -e "\033[5;46;41;37m            【 3 关闭防封 】                 \033[0m"
+printf "${GRE}\n"
+printf "${GRE}\n"
+echo -e "\033[5;46;43;37m            请输入你的选择............       \033[0m"
+
+printf "${GRE}\n"
+read a
+case $a in
+1)
+
+clear
+RELEASE=`date +%Y:%m:%d:%H:%M:%S`
+printf "${GRE}\n\n\n\n\n\n\n\n\n"
+
+curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh | sh
+
+
+1
+;;
+2)
+
+clear
+#清除所有规则
+
+
+
+
+curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FJ.sh | sh
+
+
+2
+;;
+3)
+
+clear
+#清除所有规则
+echo -e "\033[5;46;42;37m            【 断开防封 】                 \033[0m"
+curl -s https://ghproxy.cc/https://raw.githubusercontent.com/ACEiptables/HPJY/main/GB1.sh | sh
+echo -e "\033[5;46;42;37m            【 开启成功 】                 \033[0m"
+3
+;;
+*)
+
+
+
+
+;;
+esac
+done
