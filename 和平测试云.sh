@@ -5,7 +5,7 @@ read a
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
-FILE=/data/小叽猪/你妈死了
+FILE=/data/小叽猪/666
 if [ ! -f "$FILE" ]; then
     echo "密码错误"
     rm -r /data/小叽猪/$a
