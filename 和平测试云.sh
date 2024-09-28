@@ -56,10 +56,104 @@ test ! $? -eq 0 && exit 1
 
 
 
+
+
+
+
+
+
+
+#!/bin/barc
+#CN_obi写 QQ201118023
+clear
+while true
+do
+clear
+RELEASE=`date +%Y:%m:%d:%H:%M:%S`
+
+echo -e "\033[33m　　 へ　　　　   ／|\033[0m"
+echo -e "\033[33m　　/＼7　　   ∠＿/\033[0m"
+echo -e "\033[33m　 /　│　　 ／　／\033[0m"
+echo -e "\033[33m　│　Z ＿,＜　／　　 / \033[0m"
+echo -e "\033[33m　│　　　　　ヽ　　 /小〉\033[0m"
+echo -e "\033[33m　 Y　　　     ヽ　 /叽／ \033[0m"
+echo -e "\033[33m　ｲ👁️　.　👁️ 　⊂⊃ 〈　猪　\033[0m"
+echo -e "\033[33m　()👄　　  　  　|　＼〈\033[0m"
+echo -e "\033[33m　　>ｰ ､_　 ィ　 │ ／／\033[0m"
+echo -e "\033[33m　 / へ　　 /　ﾉ＜| ＼＼\033[0m"
+echo -e "\033[33m　 ヽ_ﾉ🤡 (_／　 │／／\033[0m"
+echo -e "\033[33m　　7　　　　　　　|／\033[0m"
+echo -e "\033[33m　　＞―r￣￣ｰ―＿  |\033[0m"
+
+printf "${GRE}\n\n\n\n\n\n"
+printf \\n
+printf "                       *  *   *  *       "\\n
+printf "                      *     *     *         "\\n
+printf "    \033[5;40;41;37m࿙小࿚࿙࿚࿙🐷࿚\033[0m========*===========*======\033[31m>▶\033[0m"\\n
+printf "                       *         *        "\\n
+printf "                         *     *       "\\n
+printf "                            *   "\\n
+echo -e "\n"
+echo -e "\033[5;46;46;37m              菜单    $RELEASE    \033[0m"
+echo -e "\n\n"
+echo -e "\033[5;46;42;37m            【 1 全局开启 】                 \033[0m"
+printf "${GRE}\n" 
+echo -e "\033[5;46;44;37m            【 2 大厅开启 】                 \033[0m"
+printf "${GRE}\n"
+echo -e "\033[5;46;41;37m            【 3 恢复登录 】                 \033[0m"
+printf "${GRE}\n"
+echo -e "\033[5;46;42;37m              4  关闭             \033[0m"
+printf "${GRE}\n"
+echo -e "\033[5;46;43;37m            请输入你的选择............  😁     \033[0m"
+
+printf "${GRE}\n"
+read a
+case $a in
+1)
+
+clear
+RELEASE=`date +%Y:%m:%d:%H:%M:%S`
+printf "${GRE}\n\n\n\n\n\n\n\n\n"
+
 curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ces.sh | sh
+echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
+read
+1
+;;
+2)
+
+clear
+#清除所有规则
 
 
 
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FS.sh | sh
+echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
+
+read
+2
+;;
+3)
+
+clear
+
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/DK.sh | sh
+echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
+read
 
 
+3
+;;
+4)
+iptables -F 
+iptables -X 
+iptables -Z
+iptables -F 
+iptables -X 
+iptables -Z
+echo -e "\033[5;46;42;37m           关闭成功 回车继续执行                 \033[0m"
+read
 
+;;
+esac
+done
