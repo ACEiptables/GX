@@ -96,11 +96,11 @@ printf "                            *   "\\n
 echo -e "\n"
 echo -e "\033[5;46;46;37m              菜单    $RELEASE    \033[0m"
 echo -e "\n\n"
-echo -e "\033[5;46;42;37m            【 1 全局开启 】                 \033[0m"
+echo -e "\033[5;46;42;37m            【 1 桌面开启 】                 \033[0m"
 printf "${GRE}\n" 
 echo -e "\033[5;46;44;37m            【 2 大厅开启 】                 \033[0m"
 printf "${GRE}\n"
-echo -e "\033[5;46;41;37m            【 3 恢复登录 】                 \033[0m"
+echo -e "\033[5;46;41;37m            【 3 恢复登录『🈲关闭中』 】                 \033[0m"
 printf "${GRE}\n"
 echo -e "\033[5;46;42;37m              4  关闭             \033[0m"
 printf "${GRE}\n"
@@ -115,7 +115,7 @@ clear
 RELEASE=`date +%Y:%m:%d:%H:%M:%S`
 printf "${GRE}\n\n\n\n\n\n\n\n\n"
 
-curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ces.sh | sh
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh | sh
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read
 1
@@ -127,7 +127,7 @@ clear
 
 
 
-curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FS.sh | sh
+curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FJ.sh | sh
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 
 read
@@ -137,7 +137,7 @@ read
 
 clear
 
-curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/DK.sh | sh
+#curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/DK.sh | sh
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read
 
