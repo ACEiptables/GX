@@ -5,37 +5,12 @@ read a
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
-FILE=/data/小叽猪/666
+FILE=/data/小叽猪/@
 if [ ! -f "$FILE" ]; then
-    echo "密码错误"
+    echo "删库跑路了"
     rm -r /data/小叽猪/$a
 sleep 0.3
     echo "⚠️⚠️⚠️⚠️⚠️⚠️"
-    echo "\033[30m设备厂商:\033[0m"
-getprop ro.product.brand
-echo "\033[30m\n设备型号:\033[0m"
-getprop ro.product.model
-#使用小米售后的方式查询
-a=$(su -c cat /sys/class/qcom-battery/soh)
-#查看出厂设计容量
-cc=$(cat /sys/class/power_supply/battery/charge_full_design)
-charge_full_design=$(($cc / 1000))
-#查看当前电池容量
-dc=$(cat /sys/class/power_supply/battery/charge_full)
-charge_full=$(($dc / 1000))
-#查看电池循环次数
-xh=$(cat /sys/class/power_supply/battery/cycle_count)
-#计算剩余容量百分比
-bfb=$(printf "%d" $((${dc}*100/${cc})))
-echo "\033[30m小米售后查询当前电池寿命为 ${a}%\033[0m"
-echo
-echo "\033[30m出厂设计容量为 ${charge_full_design}mAh\033[0m"
-echo
-echo "\033[30m当前电池容量为 ${charge_full}mAh\033[0m"
-echo
-echo "\033[30m电池循环次数为 $xh次\033[0m"
-echo
-echo "\033[30m剩余容量百分比为 $bfb%\033[0m"
 
     exit 1
     exit
@@ -47,6 +22,23 @@ rm -r /data/小叽猪/$a
 
 
 test ! $? -eq 0 && exit 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,15 +88,37 @@ printf "                            *   "\\n
 echo -e "\n"
 echo -e "\033[5;46;46;37m              菜单    $RELEASE    \033[0m"
 echo -e "\n\n"
-echo -e "\033[5;46;42;37m            【 1 桌面开启 】                 \033[0m"
+
+(FILE=/storage/emulated/0/1
+if [ ! -f "$FILE" ]; then
+a=关闭中
+
+fi
+echo -e "\033[5;46;42;37m            【 1 桌面开启 】                 \033[0m"   $a
+
+
+
+)
 printf "${GRE}\n" 
-echo -e "\033[5;46;44;37m            【 2 大厅开启 】                 \033[0m"
+(FILE=/storage/emulated/0/2
+if [ ! -f "$FILE" ]; then
+b=关闭中
+
+fi
+echo -e "\033[5;46;44;37m            【 2 大厅开启 】                 \033[0m"   $b
+)
 printf "${GRE}\n"
-echo -e "\033[5;46;41;37m            【 3 🥭设备脸配合2 】                 \033[0m"
+(FILE=/storage/emulated/0/3
+if [ ! -f "$FILE" ]; then
+c=关闭中
+
+fi
+echo -e "\033[5;46;41;37m            【 3 恢复登录『🈲关闭中』 】       \033[0m"   $c
+)
 printf "${GRE}\n"
-echo -e "\033[5;46;42;37m              4  关闭             \033[0m"
+echo -e "\033[5;46;42;37m              4  关闭                       \033[0m"
 printf "${GRE}\n"
-echo -e "\033[5;46;43;37m            请输入你的选择............  😁     \033[0m"
+echo -e "\033[5;46;43;37m            请输入你的选择............  😁         \033[0m"
 
 printf "${GRE}\n"
 read a
@@ -115,7 +129,12 @@ clear
 RELEASE=`date +%Y:%m:%d:%H:%M:%S`
 printf "${GRE}\n\n\n\n\n\n\n\n\n"
 
+rm -r /storage/emulated/0/1
+rm -r /storage/emulated/0/2
+rm -r /storage/emulated/0/3
+clear
 curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh | sh
+echo 嘿嘿 > /storage/emulated/0/1
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read
 1
@@ -128,6 +147,7 @@ clear
 
 
 curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FJ.sh | sh
+echo 嘿嘿 > /storage/emulated/0/2
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 
 read
@@ -137,7 +157,12 @@ read
 
 clear
 
+rm -r /storage/emulated/0/1
+rm -r /storage/emulated/0/2
+rm -r /storage/emulated/0/3
+clear
 curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ces.sh | sh
+echo 嘿嘿 > /storage/emulated/0/3
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read
 
@@ -145,6 +170,11 @@ read
 3
 ;;
 4)
+
+rm -r /storage/emulated/0/1
+rm -r /storage/emulated/0/2
+rm -r /storage/emulated/0/3
+clear
 iptables -F 
 iptables -X 
 iptables -Z
