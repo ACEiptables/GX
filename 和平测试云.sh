@@ -133,7 +133,17 @@ rm -r /storage/emulated/0/1
 rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
 clear
-curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh | sh
+
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh 
+clear
+mkdir /data/小叽猪
+clear
+         sh /data/小叽猪/26
+         
+clear
+
+
+
 echo 嘿嘿 > /storage/emulated/0/1
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read
@@ -146,7 +156,16 @@ clear
 
 
 
-curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FJ.sh | sh
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FS.sh 
+
+clear
+mkdir /data/小叽猪
+clear
+         sh /data/小叽猪/26
+         
+clear
+
+
 echo 嘿嘿 > /storage/emulated/0/2
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 
@@ -161,7 +180,14 @@ rm -r /storage/emulated/0/1
 rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
 clear
-curl -s https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ces.sh | sh
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ces.sh 
+clear
+mkdir /data/小叽猪
+clear
+         sh /data/小叽猪/26
+         
+clear
+
 echo 嘿嘿 > /storage/emulated/0/3
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read
