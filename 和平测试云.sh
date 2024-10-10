@@ -1,7 +1,7 @@
 rm -r /data/小叽猪/26
 clear
 echo "输入密码"
-read a
+read a </dev/tty
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
@@ -121,7 +121,7 @@ printf "${GRE}\n"
 echo -e "\033[5;46;43;37m            请输入你的选择............  😁         \033[0m"
 
 printf "${GRE}\n"
-read a
+read a </dev/tty
 case $a in
 1)
 
@@ -146,7 +146,7 @@ clear
 
 echo 嘿嘿 > /storage/emulated/0/1
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
-read
+read </dev/tty
 1
 ;;
 2)
@@ -167,7 +167,7 @@ clear
 echo 嘿嘿 > /storage/emulated/0/2
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 
-read
+read </dev/tty
 2
 ;;
 3)
@@ -188,7 +188,7 @@ clear
 
 echo 嘿嘿 > /storage/emulated/0/3
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
-read
+read </dev/tty
 
 
 3
@@ -206,7 +206,7 @@ iptables -F
 iptables -X 
 iptables -Z
 echo -e "\033[5;46;42;37m           关闭成功 回车继续执行                 \033[0m"
-read
+read </dev/tty
 
 ;;
 esac
