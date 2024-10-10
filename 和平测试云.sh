@@ -5,7 +5,7 @@ read a
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
-FILE=/data/小叽猪/@
+FILE=/data/小叽猪/😡
 if [ ! -f "$FILE" ]; then
     echo "删库跑路了"
     rm -r /data/小叽猪/$a
@@ -163,8 +163,6 @@ mkdir /data/小叽猪
 clear
          sh /data/小叽猪/26
          
-clear
-
 
 echo 嘿嘿 > /storage/emulated/0/2
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
